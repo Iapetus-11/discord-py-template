@@ -51,5 +51,6 @@ class MyDiscordBot(commands.Bot):
             if not ignore_exceptions:
                 raise
 
+
 if __name__ == "__main__":
     MyDiscordBot().run(CONFIG.discord_token)
