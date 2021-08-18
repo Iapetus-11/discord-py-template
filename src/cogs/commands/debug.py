@@ -27,5 +27,6 @@ class Debug(commands.Cog):
         except Exception as e:
             await ctx.reply(f"```py\n{format_exception(e)[:2000-9]}```")
 
+
 def setup(bot):
     bot.add_cog(Debug(bot))
