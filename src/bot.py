@@ -20,6 +20,7 @@ class MyDiscordBot(commands.Bot):
         )
 
         self.logger = setup_logging()
+        self.d = CONFIG
 
         self.cogs_list = [
             "cogs.core.events",
