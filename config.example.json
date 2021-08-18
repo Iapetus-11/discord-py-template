@@ -1,0 +1,5 @@
+{
+    "discord_token": "Discord token here",
+    "embed_color": "The color for all embeds",
+    "default_prefix": "!"
+}
