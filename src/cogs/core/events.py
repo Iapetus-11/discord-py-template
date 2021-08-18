@@ -12,6 +12,7 @@ BAD_ARG_ERRORS = (
     commands.errors.BadUnionArgument,
 )
 
+
 class Events(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
@@ -88,6 +89,7 @@ class Events(commands.Cog):
             )
 
             await self.bot.get_channel(self.d.error_channel_id).send(debug_info)
+
 
 def setup(bot):
     bot.add_cog(Events(bot))
