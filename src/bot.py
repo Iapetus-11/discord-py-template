@@ -50,3 +50,6 @@ class MyDiscordBot(commands.Bot):
         except discord.errors.Forbidden:
             if not ignore_exceptions:
                 raise
+
+if __name__ == "__main__":
+    MyDiscordBot().run(CONFIG.discord_token)
