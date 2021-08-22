@@ -38,14 +38,14 @@ class MyDiscordBot(commands.Bot):
 
     async def send_embed(self, location, message: str, *, ignore_exceptions: bool = False) -> None:
         try:
-            await location.send(embed=discord.Embed(color=self.d.cc, description=message))
+            await location.send(embed=discord.Embed(color=self.d.embed_color, description=message))
         except (discord.errors.Forbidden, discord.errors.HTTPException):
             if not ignore_exceptions:
                 raise
 
     async def reply_embed(self, location, message: str, ping: bool = False, *, ignore_exceptions: bool = False) -> None:
         try:
-            await location.reply(embed=discord.Embed(color=self.d.cc, description=message), mention_author=ping)
+            await location.reply(embed=discord.Embed(color=self.d.embed_color, description=message), mention_author=ping)
         except discord.errors.HTTPException:
             await self.send_embed(location, message, ignore_exceptions=ignore_exceptions)
         except discord.errors.Forbidden:
