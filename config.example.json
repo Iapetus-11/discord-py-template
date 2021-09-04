@@ -1,6 +1,6 @@
 {
     "discord_token": "Discord token here",
-    "embed_color": "The color for all embeds",
+    "embed_color": [1, 2, 3],
     "default_prefix": "!",
     "error_channel_id": "The channel where errors will be sent to"
 }
