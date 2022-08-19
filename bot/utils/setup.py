@@ -1,6 +1,7 @@
 import discord
 import logging
 
+
 def villager_bot_intents() -> discord.Intents:
     return discord.Intents(
         guilds=True,

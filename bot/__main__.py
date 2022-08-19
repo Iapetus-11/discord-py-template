@@ -11,6 +11,7 @@ async def main():
     async with bot:
         await bot.start()
 
+
 if __name__ == "__main__":
     try:
         asyncio.run(main())

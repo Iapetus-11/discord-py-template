@@ -54,6 +54,3 @@ class MyBot(commands.AutoShardedBot):
         embed.set_footer(text="MyBot", icon_url=self.user.avatar.url)
 
         return embed
-
-
-
